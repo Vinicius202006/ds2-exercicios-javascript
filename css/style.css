@@ -1,0 +1,60 @@
+ body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 40%; 
+        margin: 0 auto; 
+        text-align: left; 
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h1, h2 {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    ul, ol {
+        padding-left: 20px; 
+        padding-bottom: 15px;
+    }
+
+    h2, h3, p, ul, ol {
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #e2dede; 
+    }
+
+    .listas {
+        display: flex;
+        flex-direction: row;   
+        justify-content: space-between;
+
+    }
+
+    .escurinho {
+        background-color: rgb(202, 202, 198);
+    }
+
+    .imagem {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    img {
+        padding-bottom:2em;
+    }
+
+    .tamanho {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    }
