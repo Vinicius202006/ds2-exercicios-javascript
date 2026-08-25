@@ -41,3 +41,9 @@ O client-side soma para mostrar o valor mais rápido para o cliente, porém, por
 6. controlar uma sessão de usuário.
 Server-side
 Cria, guarda, valida e encerra a sessão de um usuário do lado server-side 
+
+Exercicio01.js:
+Uncaught ReferenceError: Console is not defined
+    at (index):10:9
+Este erro ocorreu pois o javascript é uma linguagem case-sensitive, ou seja, diferencia letras maiúsculas e minusculas, 
+(Case-sensitive: A linguagem diferencia totalmente letras maiúsculas de minúsculas em variáveis, funções e palavras-chave.)
