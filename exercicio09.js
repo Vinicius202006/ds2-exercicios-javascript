@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Processador de números</title>
-</head>
-
-<body>
-    <script>
-        let todosNumeros = [];
+let todosNumeros = [];
         let soma = 0;
         while (true) {
             let numero = Number(prompt("Digite vários números e aperte enter, quando quiser encerrar pressione 0 e de enter"));
@@ -51,9 +40,4 @@
         console.log(`Soma dos valores informados: ${soma}`);
         console.log(`Média dos valores: ${media}`);
         console.log(`O maior número digitado foi o: ${maiorNumero}`);
-        console.log(`O menor número digitado foi o: ${menorNumero}`);
-
-    </script>
-</body>
-
-</html>
+        console.log(`O menorr número digitado foi o: ${menorNumero}`);
