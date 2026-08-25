@@ -47,3 +47,6 @@ Uncaught ReferenceError: Console is not defined
     at (index):10:9
 Este erro ocorreu pois o javascript é uma linguagem case-sensitive, ou seja, diferencia letras maiúsculas e minusculas, 
 (Case-sensitive: A linguagem diferencia totalmente letras maiúsculas de minúsculas em variáveis, funções e palavras-chave.)
+
+Exercicio04.js
+O valor retornado aparece como 205 pois naquele momento ele é considerado uma string e o js concatena os valores ao invés de somar, resultando em 205, depois de convertido para number o js soma corretamente.
