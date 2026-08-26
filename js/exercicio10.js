@@ -1,3 +1,4 @@
+setTimeout(() => {
 const login = "admin";
 const senha = "1234";
 let tentativas = 3;
@@ -24,7 +25,8 @@ if(senhaDigitada === senha){
 if (tentativas<=0){
     alert("Você errou mais de 3 vezes, cancelando tentativa de entrada");
     window.location.reload();
-} break
+} break;
 }
 
 console.log("Parabéns! você entrou!");
+}, 100);

@@ -1,57 +1,65 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-BR>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Processador de números</title>
+    <meta charset=" UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./css/style.css">
+<title>P1 - Lista de exercícios JavaScript</title>
 </head>
 
 <body>
+    <h1>P1 - Lista de exercícios JavaScript</h1>
+    <h2>Selecione o exercício que deseja executar:</h2>
+    <div class="controles">
+        <select id="seletor-atividades">
+            <option value="">Escolha uma ativade</option>
+            <option value="01">Exercício 01 - Exibição de console.log</option>
+            <option value="02">Exercício 02 - Tipos de variáveis</option>
+            <option value="03">Exercício 03 - Cadastro de informações pessoais</option>
+            <option value="04">Exercício 04 - Soma da idade + 5</option>
+            <option value="05">Exercício 05 - Validador de voto por idade</option>
+            <option value="06">Exercício 06 - Classificador de média</option>
+            <option value="07">Exercício 07 -  Validador de login (user:admin senha:1234)</option>
+            <option value="08">Exercício 08 - Tabuada</option>
+            <option value="09">Exercício 09 - Array com contador </option>
+            <option value="10">Exercício 10 - Validador de login com limite (user:admin senha:1234)</option>
+            <option value="11">Exercício 11 - Funções</option>
+            <option value="desafio">Desafio Final - Cadastro de estudantes com contador</option>
+        </select>
+        <button id="btn-executar">Executar</button>
+    </div>
+
+    <p><small>Abra o Console do Navegador (F12) para ver os resultados.</small></p>
+    
     <script>
-function somar(numero1, numero2) {
-    return numero1 + numero2
-};
+      document.getElementById("btn-executar").addEventListener("click", function() {
+  const escolha = document.getElementById("seletor-atividades").value;
 
-var soma = somar(2, 3);
+  if (escolha === "") {
+    alert("Por favor, selecione um exercício.");
+    return;
+  }
 
-console.log(`Soma(2+3): ${soma}`);
+  console.clear();
 
-function calculaMedia(nota1, nota2) {
-    if (nota1 <= 10 && nota1 >= 0 && nota2 <= 10 && nota2 >= 0) {
-        return (nota1 + nota2) / 2
-    } else {
-        console.log("Valor digitado não suportado, por favor digite um valor entre 0 e 10 nas notas");
-    }
+  const scriptAntigo = document.getElementById("script-atividade-ativa");
+  if (scriptAntigo) {
+    scriptAntigo.remove();
+  }
 
-};
+  const novoScript = document.createElement("script");
+  novoScript.id = "script-atividade-ativa";
+  
+  if (escolha === "desafio") {
+    novoScript.src = "./js/desafio-final.js";
+  } else {
+    novoScript.src = `./js/exercicio${escolha}.js`;
+  }
 
-var media = calculaMedia(10, 8);
-
-console.log(`Média(10, 8): ${media}`);
-
-function classificaMedia(cMedia) {
-
-    if (cMedia >= 7) {
-        console.log("Parabéns! passou");
-    } else if (cMedia >= 5) {
-        console.log("Recuperação :(");
-    } else if (cMedia <= 4) {
-        console.log("Reprovado");
-    }
-}
-
-
-var mediaFinal = classificaMedia(10);
-
-console.log(mediaFinal);
-
-function saudacao(nome) {
-    console.log(`Saudações ${nome}! tudo bem com você?`);
-}
-
-var saudar = saudacao("Vinicius");
-console.log(saudar);
+  // Injeta o script na página para execução imediata
+  document.body.appendChild(novoScript);
+});
+  
     </script>
 </body>
 

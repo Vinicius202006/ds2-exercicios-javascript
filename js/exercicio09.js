@@ -1,3 +1,4 @@
+setTimeout(() => {
 let todosNumeros = [];
         let soma = 0;
         while (true) {
@@ -41,3 +42,4 @@ let todosNumeros = [];
         console.log(`Média dos valores: ${media}`);
         console.log(`O maior número digitado foi o: ${maiorNumero}`);
         console.log(`O menorr número digitado foi o: ${menorNumero}`);
+}, 100);

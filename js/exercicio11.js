@@ -4,7 +4,7 @@ function somar(numero1, numero2) {
 
 var soma = somar(2, 3);
 
-console.log(`Soma: {$soma}`);
+console.log(`Soma: ${soma}`);
 
 function calculaMedia(nota1, nota2) {
     if (nota1 <= 10 && nota1 >= 0 && nota2 <= 10 && nota2 >= 0) {

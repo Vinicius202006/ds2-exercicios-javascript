@@ -1,60 +1,105 @@
  body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        padding: 20px;
-        max-width: 40%; 
-        margin: 0 auto; 
-        text-align: left; 
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h1, h2 {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+     padding: 20px;
+     max-width: 40%;
+     margin: 0 auto;
+     text-align: left;
+ }
 
-    h3{
-        text-align: center;
-        margin-bottom: 20px;
-    }
+ h1 {
+     font-size: 2rem;
+ }
 
-    ul, ol {
-        padding-left: 20px; 
-        padding-bottom: 15px;
-    }
+ h1,
+ h2 {
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
 
-    h2, h3, p, ul, ol {
-        margin-top: 20px;
-        padding-top: 20px;
-        border-top: 1px solid #e2dede; 
-    }
+ h3 {
+     text-align: center;
+     margin-bottom: 20px;
+ }
 
-    .listas {
-        display: flex;
-        flex-direction: row;   
-        justify-content: space-between;
+ ul,
+ ol {
+     padding-left: 20px;
+     padding-bottom: 15px;
+ }
 
-    }
+ h2,
+ h3,
+ p,
+ ul,
+ ol {
+     margin-top: 20px;
+     padding-top: 20px;
+     border-top: 1px solid #e2dede;
+ }
 
-    .escurinho {
-        background-color: rgb(202, 202, 198);
-    }
+ .listas {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
 
-    .imagem {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
-    }
+ }
 
-    img {
-        padding-bottom:2em;
-    }
+ .escurinho {
+     background-color: rgb(202, 202, 198);
+ }
 
-    .tamanho {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    }
+ .imagem {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-direction: column;
+ }
+
+ img {
+     padding-bottom: 2em;
+ }
+
+ .tamanho {
+     width: 100%;
+     max-width: 600px;
+     height: auto;
+ }
+
+ .controles {
+     display: flex;
+     gap: 12px;
+     justify-content: center;
+     align-items: center;
+     background: white;
+     padding: 20px;
+     border-radius: 8px;
+     margin-bottom: 10px;
+ }
+
+ select {
+     padding: 10px 15px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     outline: none;
+     cursor: pointer;
+     background-color: #fff;
+ }
+
+ button {
+     padding: 10px 20px;
+     font-size: 16px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-weight: bold;
+     transition: background-color 0.2s ease;
+ }
+
+ button:hover {
+     background-color: #0056b3;
+ }

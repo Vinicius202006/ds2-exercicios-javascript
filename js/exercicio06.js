@@ -1,3 +1,4 @@
+setTimeout(() => {
 const nome = prompt("Digite seu nome");
 let n1, n2;
 
@@ -70,3 +71,4 @@ if (n1 !== undefined && n2 !== undefined) {
 } else {
     console.log("Processo cancelado.");
 }
+}, 100);
