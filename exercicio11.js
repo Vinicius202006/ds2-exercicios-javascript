@@ -1,21 +1,10 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Processador de números</title>
-</head>
-
-<body>
-    <script>
 function somar(numero1, numero2) {
     return numero1 + numero2
 };
 
 var soma = somar(2, 3);
 
-console.log(`Soma(2+3): ${soma}`);
+console.log(`Soma: {$soma}`);
 
 function calculaMedia(nota1, nota2) {
     if (nota1 <= 10 && nota1 >= 0 && nota2 <= 10 && nota2 >= 0) {
@@ -26,9 +15,9 @@ function calculaMedia(nota1, nota2) {
 
 };
 
-var media = calculaMedia(10, 8);
+var media = calculaMedia(10, 10);
 
-console.log(`Média(10, 8): ${media}`);
+console.log(`Média: ${media}`);
 
 function classificaMedia(cMedia) {
 
@@ -52,7 +41,3 @@ function saudacao(nome) {
 
 var saudar = saudacao("Vinicius");
 console.log(saudar);
-    </script>
-</body>
-
-</html>
