@@ -2,21 +2,20 @@ Em qual momento uma página dinâmica é processada e por que um banco de dados 
 
 Uma página dinâmica é processada no servidor no exato momento em que o usuário acessa o endereço web. Um banco de dados se torna necessário para armazenar, organizar e recuperar informações mutáveis e personalizadas que mudam constantemente para cada usuário.
 
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+
 |                                       |                             Client-Side                                        |                                         Server-Side                                       |
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+
 | Local em que o código é executado     | Na máquina do usuário.                                                         | No servidor.                                                                              |
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |  
+
 | Tecnologias de exemplo                | HTML, CSS, JavaScript.                                                         | PHP, Java, Node.js.                                                                       |
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+
 | Responsabilidades                     | Renderização visual, Interatividade em tempo real e Validação de dados.        | Processamento de Requisições, Gestão de Banco de Dados e Integração com Serviços Externos.|
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+
 | Vantagens                             | Interatividade rápida, Economia de recursos e Experiência fluida.              | Carregamento inicial rápido, Segurança aprimorada e Conteúdo personalizado.               |
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+
 | Limitações                            | Segurança Frágil, Desempenho Inicial Lento e Dependência do Aparelho.          | Maior custo, dependência de conexão contínua e latência em regiões distantes.             |
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+
 | Exemplos de tarefas adequadas         | Validação de formulários, Feedback em tempo real e animações e efeitos visuais.| Acesso a bancos de dados, Manipulação de dados sensíveis e Lógica de negócios complexa.   |
-| ------------------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
 
 1. validar se um campo obrigatório foi preenchido;
 Client-side
