@@ -2,7 +2,9 @@ setTimeout(() => {
     const usuarioCerto = "admin";
     const senhaCerta = "1234";
 
-
+    // = Atribuí
+    // == Compara
+    // === Compara estritamente(Valor e tipo devem ser exatos)
     const usuario = prompt("Digite o usuário");
     if (usuario === "admin") {
         const senha = prompt("Digite a senha");
