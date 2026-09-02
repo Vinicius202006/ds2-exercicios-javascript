@@ -32,8 +32,18 @@ let todosNumeros = [];
         //Menor numero
         menorNumero = Math.min(...todosNumeros);
 
-        //Acrescentar 0 no ínicio
-        todosNumeros.unshift(0);
+        //Tratando se o primeiro número for 0
+        if (isNaN(media)){
+            media = 0;
+        };
+
+        if (maiorNumero === -Infinity){
+            maiorNumero = 0;
+        };
+
+        if (menorNumero === Infinity){
+            menorNumero = 0;
+        };
 
         //Mostra os valores
         console.log(todosNumeros);
@@ -41,5 +51,5 @@ let todosNumeros = [];
         console.log(`Soma dos valores informados: ${soma}`);
         console.log(`Média dos valores: ${media}`);
         console.log(`O maior número digitado foi o: ${maiorNumero}`);
-        console.log(`O menorr número digitado foi o: ${menorNumero}`);
+        console.log(`O menor número digitado foi o: ${menorNumero}`);
 }, 100);
