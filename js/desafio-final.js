@@ -18,36 +18,33 @@ setTimeout(() => {
         let notaDois = 0;
 
         while (true) {
-    const entradaUm = prompt("Digite a primeira nota de 0 a 10 (1/2)");
+            const entradaUm = prompt("Digite a primeira nota de 0 a 10 (1/2)");
 
-    if (entradaUm !== null && entradaUm.trim() !== "") {
+            if (entradaUm !== null && entradaUm.trim() !== "") {
+                notaUm = Number(entradaUm);
+                if (!isNaN(notaUm) && notaUm >= 0 && notaUm <= 10) {
+                    break;
+                }
+            }
 
-        notaUm = Number(entradaUm);
-
-        if (!isNaN(notaUm) && notaUm >= 0 && notaUm <= 10) {
-            break;
+            alert("Valor digitado não suportado, por favor digite um valor entre 0 e 10 nas notas");
         }
-    }
-
-    alert("Valor digitado não suportado, por favor digite um valor entre 0 e 10 nas notas");
-}
 
         while (true) {
-    const entradaDois = prompt("Digite a segunda nota de 0 a 10 (2/2)");
+            const entradaDois = prompt("Digite a segunda nota de 0 a 10 (2/2)");
 
-    if (entradaDois !== null && entradaDois.trim() !== "") {
+            if (entradaDois !== null && entradaDois.trim() !== "") {
+                notaDois = Number(entradaDois);
 
-        notaDois = Number(entradaDois);
+                if (!isNaN(notaDois) && notaDois >= 0 && notaDois <= 10) {
+                    break;
+                }
+            }
 
-        if (!isNaN(notaDois) && notaDois >= 0 && notaDois <= 10) {
-            break;
+            alert("Valor digitado não suportado, por favor digite um valor entre 0 e 10 nas notas");
         }
-    }
 
-    alert("Valor digitado não suportado, por favor digite um valor entre 0 e 10 nas notas");
-}
 
-       
 
         function calculaMedia(n1, n2) {
             if (
@@ -58,14 +55,14 @@ setTimeout(() => {
                 n2 <= 10 &&
                 n2 >= 0
             ) {
-                return (n1 + n2) / 2 ;
+                return (n1 + n2) / 2;
             } else {
                 alert("Valor digitado não suportado, por favor digite um valor entre 0 e 10 nas notas");
             }
         }
-        
+
         const mediaFinal = calculaMedia(notaUm, notaDois);
-        
+
         function classificaMedia(classificarMedia) {
 
             const P = "Passou! Parabéns!";
