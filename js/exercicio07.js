@@ -2,22 +2,17 @@ setTimeout(() => {
     const usuarioCerto = "admin";
     const senhaCerta = "1234";
 
-    while (true) {
-        const usuario = prompt("Digite o usuário");
-        if (usuario === "admin") {
-            break;
-        }
-        window.alert("Usuário errado");
-    }
 
-
-    while (true) {
+    const usuario = prompt("Digite o usuário");
+    if (usuario === "admin") {
         const senha = prompt("Digite a senha");
-        if (senha === "1234") {
-            break;
+        if (senha === senhaCerta) {
+            console.log("Acesso liberado!")
+        } else {
+            console.log("Acesso negado");
         }
-        window.alert("Login errado");
+    } else {
+        console.log("Acesso negado");
     }
-    window.alert("Login efetuado com sucesso! Bem vindo Admin!");
-    console.log("Login efetuado com sucesso! Bem vindo Admin!");
+
 }, 100);
