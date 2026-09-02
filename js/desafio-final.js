@@ -45,7 +45,7 @@ acabou: while (true) {
             return P
         } else if (classificarMedia >= 5) {
             return RPC
-        } else if (classificarMedia <= 4) {
+        } else {
             return RPV
         }
     };
