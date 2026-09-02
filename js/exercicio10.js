@@ -1,32 +1,35 @@
 setTimeout(() => {
-const login = "admin";
-const senha = "1234";
-let tentativas = 3;
+    const login = "admin";
+    const senha = "1234";
+    let tentativas = 4;
 
-while(true){
-loginDigitado = prompt("Digite um usuário");
+    while (true) {
+        loginDigitado = prompt("Digite um usuário");
 
-if(loginDigitado === login){
-  break;  
-} else
-    alert("Usuário não encontrado");
-};
+        if (loginDigitado === login) {
+            break;
+        } else
+            alert("Usuário não encontrado, digite novamente");
+    };
 
-while(true){
-senhaDigitada = prompt("Digite uma senha");
+    while (true) {
+        senhaDigitada = prompt("Digite uma senha");
 
-if(senhaDigitada === senha){
-    break;
-} else {
-    alert(`Você errou a senha, lhe restam ${tentativas} tentativas`);
-    tentativas = (tentativas - 1)
-};
+        if (loginDigitado === login && senhaDigitada === senha) {
+            break;
+        } else if (loginDigitado !== login) {
 
-if (tentativas<=0){
-    alert("Você errou mais de 3 vezes, cancelando tentativa de entrada");
-    window.location.reload();
-} break;
-}
+        } else if (senhaDigitada !== senha) {
+            alert(`Você errou a senha, lhe restam ${tentativas-1} tentativas`);
+            tentativas = (tentativas - 1)
+        };
 
-console.log("Parabéns! você entrou!");
+        if (tentativas <= 0) {
+            alert("Você errou mais de 3 vezes, cancelando tentativa de entrada");
+            window.location.reload();
+            break;
+        }
+    }
+
+    console.log("Parabéns! você entrou!");
 }, 100);
